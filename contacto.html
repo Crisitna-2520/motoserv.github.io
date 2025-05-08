@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CONTACTO</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            background-color: #aa3b3b;
+            display: flex;
+            justify-content: center;
+        }
+
+        ul li {
+            display: inline;
+        }
+
+        ul li a {
+            display: inline-block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        ul li a:hover {
+            background-color: #ce7a7a;
+        }
+
+        form {
+            display: inline-block;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: red;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .logo {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <ul>
+        <li><a href="Home.html">INICIO</a></li>
+        <li><a href="Tienda.html">TIENDA</a></li>
+        <li><a href="acercade.html">ACERCA DE</a></li>
+        <li><a href="servicios.html">SERVICIOS</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+    </ul>
+
+    <!-- Logo -->
+    <div class="logo">
+        <img src="Logo.png" alt="Logo de Moto Servicio Marquez Vera" width="100">
+    </div>
+
+    <h1>Número del taller</h1>
+    <p>5567445588</p>
+
+    <h2>Envíanos un mensaje</h2>
+    <form>
+        <label for="nombre">Nombre Completo:</label><br>
+        <input type="text" id="nombre" name="nombre" required><br>
+
+        <label for="telefono">Teléfono:</label><br>
+        <input type="tel" id="telefono" name="telefono" required><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+
+        <label for="asunto">Asunto del mensaje:</label><br>
+        <select id="asunto" name="asunto" required>
+            <option value="agendar_cita">Agendar cita</option>
+            <option value="seguimiento_pedido">Seguimiento pedido</option>
+            <option value="problemas_pagina">Problemas con página</option>
+            <option value="quejas_sugerencias">Quejas o sugerencias</option>
+            <option value="otra_consulta">Otra consulta</option>
+        </select><br>
+
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4" required></textarea><br>
+
+        <button type="submit">Enviar Mensaje</button>
+    </form>
+
+</body>
+</html>

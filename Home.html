@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Moto Servicio Marquez Vera</title>
+    <style>
+        h1 { font-size: 40px; text-align: center; }
+        p { font-size: 30px; text-align: center; }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            background-color: #aa3b3b;
+            display: flex;
+            justify-content: center;
+        }
+
+        ul li {
+            display: inline;
+        }
+
+        ul li a {
+            display: inline-block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        ul li a:hover {
+            background-color: #ce7a7a;
+        }
+
+        .floating-icons {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+        }
+
+        .floating-icons a {
+            display: block;
+            margin: 10px;
+            background-color: #aa3b3b;
+            padding: 15px;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 0 4px 6px rgba(214, 157, 157, 0.2);
+            text-decoration: none;
+        }
+
+        .floating-icons a:hover {
+            background-color: #ce7a7a;
+        }
+
+        .floating-icons .icon {
+            width: 50px;
+            height: 50px;
+        }
+
+        .floating-icons .icon img {
+            width: 100%;
+            height: 100%;
+            border-radius: 0;
+        }
+
+        img.main-image {
+            display: block;
+            margin: 0 auto;
+            width: 1000px;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        .cart-icon {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+        .cart-icon a {
+            display: block;
+            width: 50px;
+            height: 50px;
+        }
+
+        .cart-icon img {
+            width: 100%;
+            height: 100%;
+        }
+         .user-icon {
+         position: absolute;
+         top: 10px;
+         right: 80px; /* Justo a la izquierda del carrito */
+        }
+
+         .user-icon a {
+         display: block;
+         width: 50px;
+         height: 50px;
+        }
+
+         .user-icon img {
+         width: 100%;
+         height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="user-icon">
+        <a href="login.html">
+            <img src="Icono_Usuario.png" alt="Usuario">
+        </a>
+    </div>
+    
+    <div class="cart-icon">
+        <a href="carrito.html">
+            <img src="Icono_Carrito.jpg" alt="Carrito de Compras">
+        </a>
+    </div>
+
+    <img src="Logo.png" alt="Logo de Moto Servicio Marquez Vera" width="100"> 
+    <ul>
+        <li><a href="Home.html">INICIO</a></li>
+        <li><a href="Tienda.html">TIENDA</a></li>
+        <li><a href="acercade.html">ACERCA DE</a></li>
+        <li><a href="servicios.html">SERVICIOS</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+    </ul>
+
+    <h1>Líder en servicios mecánicos de motocicletas y venta de refacciones en México</h1>
+    
+    <div class="content">
+        <img src="Img princi.jpg" alt="Imagen principal" class="main-image">
+        <p>Servicios mecánicos de alta calidad para motocicletas, y venta de refacciones y accesorios en línea</p>
+    </div>
+
+    <div class="floating-icons">
+        <a href="contacto.html" class="icon">
+            <img src="Icono_Llamar.jpg" alt="Llamar">
+        </a>
+        <a href="contacto.html" class="icon">
+            <img src="Icono_Mensaje.png" alt="Enviar Mensaje">
+        </a>
+        <a href="contacto.html" class="icon">
+            <img src="Icono_Ayuda.png" alt="Ayuda">
+        </a>
+    </div>
+</body>
+</html>

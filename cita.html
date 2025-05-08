@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda tu Cita | Moto Servicio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            background-color: #aa3b3b;
+            display: flex;
+            justify-content: center;
+        }
+
+        ul li {
+            display: inline;
+        }
+
+        ul li a {
+            display: inline-block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        ul li a:hover {
+            background-color: #ce7a7a;
+        }
+
+        header {
+            position: relative;
+            margin-bottom: 40px;
+        }
+
+        header img {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            z-index: 10;
+            height: 50px;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin: 10px 0 5px;
+        }
+
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+
+        input[type="date"], input[type="time"] {
+            width: 48%;
+            display: inline-block;
+        }
+
+        input[type="text"], input[type="email"], input[type="tel"], select {
+            width: 100%;
+        }
+
+        button {
+            background-color: #aa3b3b;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #aa3b3b;
+        }
+
+        .button-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .btn-agendar {
+            padding: 15px 30px;
+            background-color: #aa3b3b;
+            color: white;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .btn-agendar:hover {
+            background-color: #ce7a7a;
+        }
+    </style>
+</head>
+<body>
+    <img src="Logo.png" alt="Logo de Moto Servicio Marquez Vera" width="100"> 
+    <ul>
+        <li><a href="Home.html">INICIO</a></li>
+        <li><a href="Tienda.html">TIENDA</a></li>
+        <li><a href="acercade.html">ACERCA DE</a></li>
+        <li><a href="servicios.html">SERVICIOS</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+    </ul>
+
+<div class="container">
+    <h2>Agenda tu Cita</h2>
+    <p>Realiza tu cita y llena de manera correcta los datos siguientes:</p>
+
+    <form action="#" method="POST">
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan" required>
+
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Ej. Perez" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="Email" required>
+
+        <label for="telefono">Teléfono de contacto</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Ej. 55 1234 5678" required>
+
+        <label for="motocicleta">Tipo de Motocicleta</label>
+        <select id="motocicleta" name="motocicleta" required>
+            <option value="motoneta">Motoneta</option>
+            <option value="motocicleta">motocicleta</option>
+            <option value="motocicleta deportiva">motocicleta deportiva</option>
+            <option value="motocicleta comercial">motocicleta comercial</option>
+            <!-- Puedes agregar más opciones aquí -->
+        </select>
+
+        <label for="modelo">Modelo y Año</label>
+        <input type="text" id="modelo" name="modelo" placeholder="Ej. Italika AR 2006" required>
+
+        <label for="centro_servicio">Centro de Servicio</label>
+        <select id="centro_servicio" name="centro_servicio" required>
+            <option value="moto_servicio_chalco">Moto Servicio Chalco</option>
+            <!-- Puedes agregar más centros aquí -->
+        </select>
+
+        <label for="tipo_cita">Tipo de Cita</label>
+        <select id="tipo_cita" name="tipo_cita" required>
+            <option value="Servicio por colisión">Servicio por colisión</option>
+            <option value="Servicio eléctrico">Servicio eléctrico</option>
+            <option value="Servicio de frenos">Servicio de frenos</option>
+            <option value="otros">Otros</option>
+            <!-- Puedes agregar más opciones aquí -->
+        </select>
+
+        <label for="fecha_cita">Fecha de Cita</label>
+        <input type="date" id="fecha_cita" name="fecha_cita" required>
+
+        <label for="hora_cita">Hora de Cita</label>
+        <input type="time" id="hora_cita" name="hora_cita" value="09:30" required>
+
+        <button type="submit">Solicitar Cita</button>
+    </form>
+</div>
+
+</body>
+</html>

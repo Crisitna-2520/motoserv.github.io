@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Carrito de Compras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+            margin: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            text-align: center;
+            background-color: #aa3b3b;
+            display: flex;
+            justify-content: center;
+        }
+
+        ul li {
+            display: inline;
+        }
+
+        ul li a {
+            display: inline-block;
+            padding: 15px 20px;
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+
+        ul li a:hover {
+            background-color: #ce7a7a;
+        }
+
+        h1 {
+            color: #aa3b3b;
+            margin-top: 40px;
+        }
+
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #aa3b3b;
+            color: white;
+        }
+
+        .payment-info {
+            margin-top: 20px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            width: 60%;
+            margin: auto;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Barra de navegación -->
+    <ul>
+        <li><a href="Home.html">INICIO</a></li>
+        <li><a href="Tienda.html">TIENDA</a></li>
+        <li><a href="acercade.html">ACERCA DE</a></li>
+        <li><a href="servicios.html">SERVICIOS</a></li>
+        <li><a href="contacto.html">CONTACTO</a></li>
+    </ul>
+
+    <h1>Lista de Productos</h1>
+    <table>
+        <tr>
+            <th>Producto</th>
+            <th>Cantidad</th>
+            <th>Precio</th>
+        </tr>
+        <tr>
+            <td>Ejemplo Producto 1</td>
+            <td>1</td>
+            <td>$500 MXN</td>
+        </tr>
+        <tr>
+            <td>Ejemplo Producto 2</td>
+            <td>2</td>
+            <td>$300 MXN</td>
+        </tr>
+    </table>
+    
+    <div class="payment-info">
+        <h2>Formas de Pago</h2>
+        <p>Tarjeta de crédito, PayPal, Transferencia bancaria.</p>
+        
+        <h2>Dirección de Envío</h2>
+        <p>Calle Ficticia #123, Ciudad, País</p>
+        
+        <h2>Código de Seguimiento</h2>
+        <p>#123456789XYZ</p>
+    </div>
+    
+</body>
+</html>
